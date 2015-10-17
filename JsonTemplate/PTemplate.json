@@ -1,0 +1,175 @@
+{
+  "ProjectName": "InstantWinApp",
+  "Desc": "InstantWinApp is an redemption APP.",
+  "CreatedBy": "Javed",
+  "CreatedDate": "mm/dd/yyyy",
+  "Language": "java",
+  "Version":"1.8",
+  "LastUpdated": "2015/09/24 09:46:18",
+  "Type": "Redemption",
+  "Platform": [{
+    "Type" : "web",
+    "Config" : [{
+    "Key" : "Server",
+    "Value" : "Tomcat8"
+  }]
+  },{
+    "Type" : "android",
+    "Config" : [{
+    "Key" : "avd",
+    "Value" : "Android-Nexus6"
+  }]
+  }],
+  "Repository" : {
+    "Type": "git",
+    "Path": "git@github.com:frankcohen/v.git"
+  },
+  "Source" : {
+    "default": [{
+      "directory": "src/main/java",
+      "description": "Application/Library sources"
+    },{
+      "directory": "src/main/filters",
+      "description": "Resource filter files"
+    },{
+      "directory": "src/main/config",
+      "description": "Configuration files"
+    },{
+      "directory": "src/main/webapp",
+      "description": "Web application sources"
+    },{
+      "directory": "src/test/java",
+      "description": "Test sources"
+    },{
+      "directory": "src/test/resources",
+      "description": "Test resources"
+    },{
+      "directory": "src/test/filters",
+      "description": "Test resource filter files"
+    },{
+      "directory": "src/it",
+      "description": "Integration Tests (primarily for plugins)"
+    },{
+      "directory": "src/assembly",
+      "description": "Assembly descriptors"
+    },{
+      "directory": "src/site",
+      "description": "Site"
+    }],
+"Structure" : [{
+  "Type" : "directory",
+  "Name" : "main",
+   "in" : [{
+  "Type" : "directory",
+  "Name" : "main/resources",
+   "in" : [{
+         "Type" : "File",
+         "Name" : "InstantWinAPP.sql"
+        }]},{
+  "Type" : "directory",
+  "Name" : "main/java",
+   "in" : [{
+  "Type" : "directory",
+  "Name" : "main/java/com",
+   "in" : [{
+  "Type" : "directory",
+  "Name" : "main/java/com/winapp",
+   "in" : [{
+  "Type" : "directory",
+  "Name" : "main/java/com/winapp/login",
+   "in" : [{
+         "Type" : "File",
+         "Name" : "LoginServlet.java"
+        }]},{
+  "Type" : "directory",
+  "Name" : "main/java/com/winapp/support",
+   "in" : [{
+         "Type" : "File",
+         "Name" : "MyFilter.java"
+        },{
+         "Type" : "File",
+         "Name" : "RegBean.java"
+        },{
+         "Type" : "File",
+         "Name" : "ConnectionProvider.java"
+        }]},{
+  "Type" : "directory",
+  "Name" : "main/java/com/winapp/service",
+   "in" : [{
+         "Type" : "File",
+         "Name" : "RegisterDAOService.java"
+        }]},{
+  "Type" : "directory",
+  "Name" : "main/webapp",
+   "in" : [{
+         "Type" : "File",
+         "Name" : "register.jsp"
+        },{
+         "Type" : "File",
+         "Name" : "winning.jsp"
+        },{
+         "Type" : "File",
+         "Name" : "SignIn.jsp"
+        },{
+         "Type" : "File",
+         "Name" : "Enter.jsp"
+        },{
+         "Type" : "File",
+         "Name" : "logout.jsp"
+        },{
+         "Type" : "File",
+         "Name" : "RegistrationModel.jsp"
+        },{
+         "Type" : "File",
+         "Name" : "userValidate.jsp"
+        },{
+         "Type" : "File",
+         "Name" : "result.jsp"
+        },{
+         "Type" : "File",
+         "Name" : "logincheck.jsp"
+        }]},{
+  "Type" : "directory",
+  "Name" : "main/webapp/WEB-INF",
+   "in" : [{
+         "Type" : "File",
+         "Name" : "web.xml"
+        }]},{
+  "Type" : "directory",
+  "Name" : "main/webapp/WEB-INF/classes",
+   "in" : [{
+         "Type" : "File",
+         "Name" : "MyFilter.java"
+        }]},{
+  "Type" : "directory",
+  "Name" : "main/webapp/WEB-INF/lib",
+   "in" : [{
+         "Type" : "File",
+         "Name" : "sample.txt"
+        }]},{
+  "Type" : "directory",
+  "Name" : "main/webapp/META-INF",
+   "in" : [{
+         "Type" : "File",
+         "Name" : "MANIFEST.MF"
+        }]},{
+  "Type" : "directory",
+  "Name" : "main/webapp/include",
+   "in" : [{
+         "Type" : "File",
+         "Name" : "check.js"
+        },{
+         "Type" : "File",
+         "Name" : "formcheck.js"
+        }]
+        }]  
+    }]
+        }]
+    }]
+    }
+      ]
+}
+
+}
+
+
